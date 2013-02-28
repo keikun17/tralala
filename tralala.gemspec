@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "tralala"
   gem.require_paths = ["lib"]
   gem.version       = Tralala::VERSION
+
+  gem.add_dependency 'activesupport', '> 3.0'
+  gem.add_dependency 'activerecord', '> 3.0'
+  gem.add_dependency 'minitest'
 end
