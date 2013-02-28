@@ -5,8 +5,7 @@ touches the database.
 
 ## Usage
 
-dump in your your `lib` for now, then plop a `require 'tralala'` in your `test_helper.rb` /
-`spec_helper.rb`
+Put `gem 'tralala'` in your `Gemfile` under `:group => 'test'`
 
 ### TODO
 
