@@ -5,7 +5,11 @@ touches the database.
 
 ## Usage
 
-Put `gem 'tralala'` in your `Gemfile` under `:group => 'test'`
+1. Put `gem 'tralala'` in your `Gemfile` under `:group => 'test'`.
+2. Run Bundle.
+3. Run tests.
+4. ???
+5. Profit.
 
 ### TODO
 
@@ -15,3 +19,7 @@ Put `gem 'tralala'` in your `Gemfile` under `:group => 'test'`
 
 * Record total time for all `ActiveRecord::ConnectionAdapters` related calls
  during test runs (maybe check how NewRelic does it)
+
+---
+
+Ladidadida-Copyright stuff and all that jazz
