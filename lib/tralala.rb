@@ -7,17 +7,20 @@ module Tralala
   def dingdingdong
     callstack = caller.reject{|cs| cs.include?('active_record')}
     puts ""
-    puts "\e[34mIm You touched me tralala!\e[0m"
+    puts "\e[34mIm You touched my tralala!\e[0m"
     puts "  -- #{callstack[1].split(' ').first}"
   end
 
-  private
+  def save(*)
+    dingdingdong
+    super
+  end
 
-  def save(options={})
+  def save!(*)
     dingdingdong
     super
   end
 
 end
 
-ActiveRecord::Validations.send(:include, Tralala)
+ActiveRecord::Base.send(:include, Tralala)
