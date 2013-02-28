@@ -4,9 +4,11 @@ require File.expand_path('../lib/tralala/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["keikun17"]
   gem.email         = ["keikun17@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A Rails test gem that exposes and marks the calls that
+                        touches the database (to help you find tests that hit
+                        the database)}
+  gem.summary       = %q{A Rails gem that helps you find which tests hit the database}
+  gem.homepage      = "https://github.com/keikun17/tralala"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
