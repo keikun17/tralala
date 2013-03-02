@@ -7,7 +7,7 @@ module Tralala
   def dingdingdong
     callstack = caller.reject{|cs| cs.include?('active_record')}
     puts ""
-    puts "\e[34mIm You touched my tralala!\e[0m"
+    puts "\e[34mYou touched my tralala!\e[0m"
     puts "  -- #{callstack[1].split(' ').first}"
   end
 
